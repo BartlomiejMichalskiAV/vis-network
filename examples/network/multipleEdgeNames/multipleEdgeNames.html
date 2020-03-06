@@ -25,12 +25,83 @@
 <script type="text/javascript">
   // create an array with nodes
   var nodes = new vis.DataSet([
-    {id: 1, label: '1'},
+    {id: 1, label: '1', 
+      status: {
+        options: {
+          offsetX: 15,
+          offsetY: 15,
+          size: 5,
+          color: 'blue',
+          text: 'a to jak wyglada',
+          textOffset: 9,
+          textBackgroundColor: '#e59f03',
+          textBorderColor: '#e59f03',
+          drawTextBackground: true,
+          textColor: 'snow',
+          textSize: 20
+        }
+      }},
     {id: 2, label: '2'},
-    {id: 3, label: '3'},
-    {id: 4, label: '4'},
-    {id: 5, label: '5'},
-    {id: 6, label: '6'}
+    {id: 3, label: '3', 
+      status: {
+        options: {
+          offsetX: 15,
+          offsetY: 15,
+          size: 7,
+          color: 'blue',
+          text: 'info',
+          textOffset: 10,
+          textBorderColor: 'blue',
+          textColor: 'blue',
+        }
+      }},
+    {id: 4, label: '4', 
+      status: {
+        options: {
+          offsetX: 25,
+          offsetY: 15,
+          size: 3,
+          color: 'blue',
+          text: 'a to jak wyglada',
+          textOffset: 24,
+          textBackgroundColor: '#e59f03',
+          textBorderColor: '#e59f03',
+          drawTextBackground: true,
+          textColor: 'snow',
+        }
+      }},
+    {id: 5, label: '5', 
+      status: {
+        options: {
+          offsetX: 20,
+          offsetY: 20,
+          size: 5,
+          color: 'red',
+          text: 'hm',
+          textBackgroundColor: 'white',
+          drawTextBackground: true,
+          textBorderColor: 'red',
+          textColor: 'red',
+        }
+      }},
+    {id: 6, label: '6', 
+      status: {
+        options: {
+          offsetX: 15,
+          offsetY: 15,
+          size: 5,
+          color: 'red',
+          label: {
+            text: '1 2 3 4 5 omg',
+            drawBackground: true,
+            offset: 10,
+            backgroundColor: 'red',
+            borderColor: 'red',
+            color: 'yellow',
+            size: 25
+          }
+        }
+      }}
   ]);
 
   // create an array with edges
